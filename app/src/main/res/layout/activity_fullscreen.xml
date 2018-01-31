@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".FullscreenActivity">
+
+    <!-- The primary full-screen view. Contains questions, two fields for animals and etc. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--Hedgehog's field-->
+
+        <com.example.android.hedgehogorpenguin.MovementView
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:elevation="5dp"
+            android:orientation="horizontal">
+
+            <!--Button penguin-->
+
+            <ImageButton
+                android:id="@+id/answer_button_penguin"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:elevation="5dp"
+                android:onClick="checkAnswerPenguin"
+                android:src="@drawable/penguin_medium" />
+
+            <!--Questions-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/header_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FFFFFF"
+                    android:elevation="5dp"
+                    android:padding="5dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:text="@string/first_question"
+                    android:textAlignment="center"
+                    android:textColor="#33b5e5"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="10dp"
+                    android:background="#FFFFFF"
+                    android:elevation="5dp"
+                    android:keepScreenOn="true"
+                    android:padding="5dp"
+                    android:text="@string/first_content"
+                    android:textAlignment="center"
+                    android:textColor="#33b5e5"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/next_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#FFFFFF"
+                    android:onClick="nextQuestion"
+                    android:padding="7dp"
+                    android:text="@string/next"
+                    android:textColor="#64DD17"
+                    android:textSize="18sp"
+                    android:translationZ="5dp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <!--Button Hedghehog-->
+
+            <ImageButton
+                android:id="@+id/answer_button_hedgehog"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:elevation="5dp"
+                android:onClick="checkAnswerHedgehog"
+                android:src="@drawable/hedgehog_middle" />
+
+        </LinearLayout>
+
+        <!--Field with penguins-->
+
+        <com.example.android.hedgehogorpenguin.MovementViewPenguins
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!--Iglu-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/iglu" />
+
+    <!--Tree-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/tree" />
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

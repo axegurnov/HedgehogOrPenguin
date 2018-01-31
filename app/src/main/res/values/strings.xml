@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Hedgehogs or Penguins</string>
+    <string name="next">Next</string>
+    <string name="first_question">Barman, two glasses of water, please.</string>
+    <string name="first_content">These animals can drink salty water</string>
+    <string name="question1">You are so old...</string>
+    <string name="content1">It is considered that this animals have appeared 70 million years ago, even living at the time of dinosaurs.</string>
+    <string name="question2">Don\'t bite me!</string>
+    <string name="content2">These animals have 36 teeth which by an old age drop out.</string>
+    <string name="question3">Where are you from?</string>
+    <string name="content3">Some of these animals live on Galapagos Islands.</string>
+    <string name="question4">Let\'s build a house!</string>
+    <string name="content4">These animals build nests, but only of pieces of rocks, a moss and wooden chips.</string>
+    <string name="question5">Hmm, looks like an eatable...</string>
+    <string name="content5">The strongest and dangerous poisons, for example, arsenic,  don\'t influence these animals.</string>
+    <string name="question6">And they lived happily ever after</string>
+    <string name="content6">Scientists have proved that married couples of these animals don\'t part to 16 years</string>
+    <string name="question7">Who whistles here?</string>
+    <string name="content7">Communication of these animals occurs by means of a whistle.</string>
+    <string name="question8">Brrrr...</string>
+    <string name="content8">Body temperature of these animals is about 2 degrees Celsius.</string>
+    <string name="question9">Run, Forest, run...</string>
+    <string name="content9">These animals on average pass for day of 2000 meters.</string>
+    <string name="question10">Omnomnom...</string>
+    <string name="content10">One of the most famous programmers was bitten once by such animal, and it became very influential event.</string>
+    <string name="question11">Happy Birtday!</string>
+    <string name="content11">These animals usually have 3-5 children.</string>
+    <string name="question12">Not happy meal</string>
+    <string name="content12">These animals became the cause of the incident connected with McDonald\'s in 2006.</string>
+    <string name="question13">This is my town</string>
+    <string name="content13">These animals generally live there where were born.</string>
+    <string name="qfinally">Congratulations!</string>
+    <string name="pfinally">You know more about penguins, than about hedgehogs and therefore penguins have chosen you as the king!</string>
+    <string name="hfinally">You know more about hedgehogs, than about penguins and therefore hedgehogs have chosen you as the king!</string>
+    <string name="dfinally">Penguins and hedgehogs love you because you know everything about them, now you are their king!</string>
+    <string name="again">Try again</string>
+    <string name="hedgehog">Hedgehogs</string>
+    <string name="or">OR</string>
+    <string name="penguins">Penguins?</string>
+    <string name="author">Created by: Zhitkov Roman, 2018</string>
+    <string name="start">Let\'s go!</string>
+
+</resources>
