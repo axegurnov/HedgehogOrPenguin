@@ -73,6 +73,7 @@ public class MovementViewPenguins extends SurfaceView implements SurfaceHolder.C
         Rect surfaceFrame = holder.getSurfaceFrame();
         width = surfaceFrame.width();
         height = surfaceFrame.height();
+        height-=50;
         Resources iceImage = this.getResources();
         iceBitmap = BitmapFactory.decodeResource(iceImage, R.drawable.ice3);
 

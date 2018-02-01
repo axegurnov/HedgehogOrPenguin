@@ -23,7 +23,6 @@ public class MovementView extends SurfaceView implements SurfaceHolder.Callback 
     private Bitmap grassBitmap;
     private int width;
     private int height;
-
     private CopyOnWriteArrayList<Hedgehog> hedgehogs = new CopyOnWriteArrayList<>();
 
     UpdateThread updateThread;
@@ -71,6 +70,8 @@ public class MovementView extends SurfaceView implements SurfaceHolder.Callback 
         Rect surfaceFrame = holder.getSurfaceFrame();
         width = surfaceFrame.width();
         height = surfaceFrame.height();
+
+        height-=50;
         Resources grassImage = this.getResources();
         grassBitmap = BitmapFactory.decodeResource(grassImage, R.drawable.grass);
 

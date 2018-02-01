@@ -29,13 +29,13 @@
             android:rotationY="30"
             android:text="@string/hedgehog"
             android:textColor="@color/white"
-            android:textSize="@dimen/hedgehog_text_size"
+            android:textSize="@dimen/hedgehog_text_size_small"
             android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/or_linear_margin_top"
+            android:layout_marginTop="@dimen/or_linear_margin_top_small"
             android:gravity="fill_horizontal"
             android:orientation="horizontal">
 
@@ -56,7 +56,7 @@
                 android:gravity="center"
                 android:text="@string/or"
                 android:textColor="@color/white"
-                android:textSize="@dimen/or_text_size"
+                android:textSize="@dimen/or_text_size_small"
                 android:textStyle="bold" />
 
             <ImageView
@@ -74,11 +74,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/penguin_text_margin_top"
+            android:layout_marginTop="@dimen/penguin_text_margin_top_small"
             android:rotationY="-30"
             android:text="@string/penguins"
             android:textColor="@color/white"
-            android:textSize="@dimen/penguin_text_size"
+            android:textSize="@dimen/penguin_text_size_small"
             android:textStyle="bold" />
 
         <Button
@@ -86,23 +86,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/start_button_margin_top"
+            android:layout_marginTop="@dimen/start_button_margin_top_small"
             android:background="@color/white"
             android:onClick="start"
             android:padding="@dimen/padding_button"
             android:text="@string/start"
             android:textColor="@color/green_button"
-            android:textSize="@dimen/start_button_text_size" />
+            android:textSize="@dimen/start_button_text_size_small" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="@dimen/author_margin_bottom"
+            android:layout_marginBottom="@dimen/author_margin_bottom_small"
             android:gravity="bottom"
             android:text="@string/author"
             android:textColor="@color/white"
-            android:textSize="@dimen/author_text_size" />
+            android:textSize="@dimen/author_text_size_small" />
 
     </LinearLayout>
 </RelativeLayout>
